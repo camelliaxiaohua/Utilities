@@ -127,3 +127,31 @@ return ResponseEntity.ok().headers(HttpHeaderUtils.exposHeaders()).body("生成�
 
 
 
+```json
+{
+  "name": "Test Parameter",
+  "value": "Test Value",
+  "intValue": 123,
+  "longValue": 9876543210,
+  "decimalValue": 12345.67,
+  "isActive": true,
+  "dateValue": "2024-11-07",
+  "dateTimeValue": "2024-11-07T09:41:00",
+  "tags": ["Java", "Thymeleaf", "Spring Boot"],
+  "interests": ["Coding", "Music", "Traveling"],
+  "relatedEntity": {
+    "name": "Nested Entity",
+    "value": "Nested Value",
+    "intValue": 456,
+    "longValue": 1234567890,
+    "decimalValue": 98765.43,
+    "isActive": false,
+    "dateValue": "2024-01-01",
+    "dateTimeValue": "2024-01-01T12:00:00",
+    "tags": ["Spring", "Hibernate"],
+    "interests": ["Reading", "Writing"],
+    "relatedEntity": null
+  }
+}
+
+```

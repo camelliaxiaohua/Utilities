@@ -1,0 +1,10 @@
+server:
+  port: 3490
+
+spring:
+  thymeleaf:
+    cache: false         # 关闭 Thymeleaf 的缓存，开发过程中无需重启
+    encoding: UTF-8      # 设置thymeleaf页面的编码
+    mode: HTML5          # 设置thymeleaf页面的模式
+    suffix: .html        # 设置thymeleaf页面的后缀
+    prefix: classpath:/templates/  # 设置thymeleaf页面的存储路径
