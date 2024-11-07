@@ -13,7 +13,7 @@ import java.io.File;
 /**
  * 视频压缩工具类
  */
-public class CompressUtils {
+public class VideoCompressUtils {
 
     public static void compressVideo(String sourcePath , String targetPath) throws EncoderException {
         // 压缩前文件路径

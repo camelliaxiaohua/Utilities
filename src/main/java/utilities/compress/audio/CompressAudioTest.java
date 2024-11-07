@@ -1,6 +1,6 @@
 package utilities.compress.audio;
 
-import utils.compress.audio.CompressUtils;
+import utils.compress.audio.VideoCompressUtils;
 import ws.schild.jave.EncoderException;
 
 /**
@@ -11,6 +11,6 @@ public class CompressAudioTest {
     public static void main(String[] args) throws EncoderException {
         String source = "E:\\视频压缩\\before\\1mintest.mp4";
         String target = "E:\\视频压缩\\after\\1mintest.mp4";
-        CompressUtils.compressVideo(source,target);
+        VideoCompressUtils.compressVideo(source,target);
     }
 }
