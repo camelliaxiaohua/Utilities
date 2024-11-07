@@ -98,6 +98,31 @@ public class CompressImageTest {
 }
 ```
 
+---
+
+## 3. 响应头工具类
+
+### 3.1 依赖
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+```
+
+### 3.2 方法详细
+
+- `exposHeaders()`暴露响应头
+
+```java
+return ResponseEntity.ok().headers(HttpHeaderUtils.exposHeaders()).body("生成验证码成功");
+```
+
+
+
+  
+
 
 
 
