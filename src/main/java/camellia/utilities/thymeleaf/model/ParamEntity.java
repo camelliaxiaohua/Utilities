@@ -6,7 +6,6 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -49,20 +48,4 @@ public class ParamEntity implements Serializable {
         return null;
     }
 
-    @Override
-    public String toString() {
-        return "ParamEntity{" +
-                "name='" + name + '\'' +
-                ", value='" + value + '\'' +
-                ", intValue=" + intValue +
-                ", longValue=" + longValue +
-                ", decimalValue=" + decimalValue +
-                ", isActive=" + isActive +
-                ", dateValue=" + dateValue +
-                ", dateTimeValue=" + dateTimeValue +
-                ", tags=" + Arrays.toString(tags) +
-                ", interests=" + interests +
-                ", relatedEntity=" + relatedEntity +
-                '}';
-    }
 }
