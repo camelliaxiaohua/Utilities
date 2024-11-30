@@ -8,3 +8,20 @@ spring:
     mode: HTML5          # 设置thymeleaf页面的模式
     suffix: .html        # 设置thymeleaf页面的后缀
     prefix: classpath:/templates/  # 设置thymeleaf页面的存储路径
+
+  datasource:
+    url: jdbc:mysql://101.32.244.148:3306/camellia?useSSL=false&serverTimezone=UTC  # 设置数据库连接 URL
+    username: root                                # 设置数据库用户名
+    password: camellia20.                               # 设置数据库密码
+    driver-class-name: com.mysql.cj.jdbc.Driver           # 设置数据库驱动
+    hikari:
+      maximum-pool-size: 10                               # 设置连接池的最大连接数
+      minimum-idle: 2                                     # 设置连接池的最小空闲连接数
+      idle-timeout: 30000                                 # 设置连接空闲的最大等待时间
+      max-lifetime: 600000                                # 设置连接的最大生命周期
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10GB           # 设置最大文件上传大小
+      max-request-size: 10GB        # 设置请求体的最大大小
+      file-size-threshold: 2KB     # 设置文件上传时的临时文件阈值

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title> </title>
+    <link rel="stylesheet" href="style/style1.css" type="text/css" media="screen" />
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            font-size:14px;
+            background-color:#fff;
+            font-family: 'SimSun', '宋体', sans-serif;
+        }
+        ul,li{
+            list-style:none;
+        }
+        .year{
+            margin: 20px;
+        }
+        .year_title{
+            width: 100%;
+            float: left;
+        }
+        .year_title h3{
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            font-weight: normal;
+            text-align: right;
+        }
+        .year_title h4{
+            width: 100%;
+            float: left;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .year_title h5{
+            width: 100%;
+            float: left;
+            font-size: 20px;
+            font-weight: normal;
+            text-align: center;
+            margin-top: 10px;
+            color: #555;
+        }
+        .year_title h6{
+            width: 100%;
+            float: left;
+            color: #555;
+        }
+        .year_title h6 p{
+            float: left;
+            width: 20%;
+            font-weight: normal;
+            margin-top: 30px;
+        }
+
+        .year_tab{
+            width: 100%;
+            float: left;
+        }
+
+        .year_tab table{
+            margin-top: 15px;
+            border: 1px solid #c5d9ed;
+            border-top: 0px;
+            border-left: 0px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .year_tab table tr td{
+            border-top: 1px solid #c5d9ed;
+            border-left: 1px solid #c5d9ed;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            color: #4a658f;
+        }
+
+        .year_tab table tr td.bgc{
+            background: #f4f8fb;
+            color: #13639f;
+        }
+
+        .year_tab table tr td p{
+            flex: 1;
+            float: left;
+
+        }
+        .explain{
+            width: 100%;
+            float: left;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .explain li{
+            line-height: 24px;
+            color: #555;
+        }
+        .qz{
+            width: 100%;
+            float: left;
+            text-indent: 2em;
+            position: relative;
+            text-align: left;
+            line-height: 24px;
+        }
+        .qz span{
+            position: absolute;
+            right: 0px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+<div class="year">
+    <div class="year_title">
+        <h3>表一</h3>
+        <h4>连云港市市区公(廉)租住房租赁补贴年检表</h4>
+        <h5>(城镇居民家庭)</h5>
+        <h6>
+            <p>户籍:</p>
+            <p>区:</p>
+            <p>街道(镇):</p>
+            <p>居委会:</p>
+            <p>编号:</p>
+        </h6>
+    </div>
+
+    <div class="year_tab">
+        <table border="0"  cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="bgc" rowspan="2" width="5%">基本情况</td>
+                <td class="bgc" width="10%">申请人姓名</td>
+                <td></td>
+                <td class="bgc" width="10%">性别</td>
+                <td></td>
+                <td class="bgc" width="10%">婚姻状况</td>
+                <td colspan="2"></td>
+            </tr>
+
+
+            <tr>
+
+                <td class="bgc">联系电话</td>
+                <td colspan="3"></td>
+                <td class="bgc">家庭人口申报数</td>
+                <td colspan="2">人</td>
+            </tr>
+            <tr>
+                <td class="bgc">收入等级</td>
+                <td colspan="7" >
+                    <div  style="display: flex; width: 100%;" >
+                        <p>  特困     <input type="radio" name="grade" /></p>
+                        <p>  低收入   <input type="radio" name="grade" /></p>
+                        <p>  中低收入 <input type="radio" name="grade" /></p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="bgc">保障类别</td>
+                <td  colspan="7" >
+                    <div  style="display: flex; width: 100%;" >
+                        <p>  廉租住房(租赁补贴)    <input type="checkbox" name="grade" /></p>
+                        <p>  公共租赁佳房(租赁补贴)     <input type="checkbox" name="grade" /></p>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="bgc" rowspan="6">家庭成员基本情况</td>
+                <td class="bgc">称谓</td>
+                <td class="bgc">姓 名</td>
+                <td class="bgc"  colspan="2">身份证号码</td>
+                <td class="bgc">工作单位</td>
+                <td class="bgc">年可支配收入(元)</td>
+                <td class="bgc">联系电话</td>
+            </tr>
+            <tr>
+
+                <td class="bgc">主申请人</td>
+                <td></td>
+                <td  colspan="2"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+
+                <td class="bgc">配偶</td>
+                <td></td>
+                <td  colspan="2"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+
+                <td class="bgc">子女</td>
+                <td></td>
+                <td  colspan="2"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+
+                <td class="bgc"></td>
+                <td></td>
+                <td  colspan="2"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+
+                <td class="bgc"></td>
+                <td></td>
+                <td  colspan="2"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bgc"  rowspan="2"  colspan="2">车辆购置情况</td>
+                <td class="bgc">机动车所有人</td>
+                <td colspan="2"></td>
+                <td class="bgc">车辆登记日期</td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="bgc">车辆品牌</td>
+                <td  colspan="2"></td>
+                <td class="bgc">购车价格(万元)</td>
+                <td colspan="2"></td>
+
+            </tr>
+            <tr>
+                <td class="bgc" rowspan="3"  colspan="2">工商登记情况</td>
+                <td class="bgc">工商注册名称</td>
+                <td  colspan="5"></td>
+            </tr>
+            <tr>
+
+                <td class="bgc">法人代表姓名</td>
+                <td  colspan="2"></td>
+                <td class="bgc">注册资金(万元)</td>
+                <td  colspan="3"></td>
+            </tr>
+            <tr>
+
+                <td class="bgc" >参股人姓名</td>
+                <td  colspan="2"></td>
+                <td class="bgc" >参股金额(万元)</td>
+                <td  colspan="3"></td>
+            </tr>
+            <tr>
+                <td class="bgc" rowspan="4">现住房情况</td>
+                <td class="bgc">房屋地址</td>
+                <td colspan="3"></td>
+                <td class="bgc">建筑面积(㎡)</td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+
+                <td class="bgc">房屋性质</td>
+                <td  colspan="6">
+                    <div  style="display: flex; width: 100%;" >
+                        <p>  租借房屋     <input type="checkbox" name="grade" /></p>
+                        <p>  私房     <input type="checkbox" name="grade" /></p>
+                        <p>  直管公房   <input type="checkbox" name="grade" /></p>
+                        <p>  单位公房 <input type="checkbox" name="grade" /></p>
+                        <p>  临时房屋 <input type="checkbox" name="grade" /></p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+
+                <td class="bgc" rowspan="2">原有私房变更情况</td>
+                <td class="bgc">拆迁面积(㎡)</td>
+                <td></td>
+                <td class="bgc">补偿金额(元)</td>
+                <td></td>
+                <td class="bgc">拆迁时间</td>
+                <td> 年 月 日</td>
+            </tr>
+            <tr>
+
+
+                <td class="bgc">转让面积(㎡)</td>
+                <td></td>
+                <td class="bgc">转让金额(元)</td>
+                <td></td>
+                <td class="bgc">转让时间</td>
+                <td>年 月 日</td>
+            </tr>
+            <tr>
+                <td  class="bgc" colspan="2">诚信承诺授权书</td>
+
+                <td  colspan="6">
+                    <p class="qz">本人及家庭成员承诺以上填写的内容真实无说，所提供的有关证明材料真实有效，所申报的家庭住房及经济状况全部真实，如有虚假或瞒报，愿意接受相关部门给予的处罚。</p>
+                    <p class="qz">本人及家庭成员授权相关部门对我家庭的住房及经济状况进行核查。</p>
+                    <p class="qz" style="margin-top: 20px;">全体申请人签名: <span>年月日</span></p>
+                </td>
+            </tr>
+
+
+        </table>
+    </div>
+
+    <ul class="explain">
+        <li>说明:1、填报此表内有选择项目用“√"标识。</li>
+        <li>2、此表一式三份。街道、区、市住房保障部门各一份。</li>
+    </ul>
+
+</div>
+
+
+</body>
+</html>

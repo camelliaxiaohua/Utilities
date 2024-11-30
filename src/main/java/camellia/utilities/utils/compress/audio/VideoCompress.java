@@ -71,7 +71,7 @@ public class VideoCompress {
             VideoAttributes video = new VideoAttributes();
             video.setCodec("libx264");  // 使用更高效的 H.264 编码
             video.setFrameRate(15);  // 设置较高的帧率
-            video.setBitRate((int) (totalBits/rate));  // 设置比特率为 2 Mbps
+            video.setBitRate((int) (totalBits/rate));
             // 编码设置
             EncodingAttributes attr = new EncodingAttributes();
             attr.setOutputFormat("mp4");
